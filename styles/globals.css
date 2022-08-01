@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-100 text-black dark:bg-gradient-to-bl dark:from-blue-900 dark:to-black dark:text-white;
+  }
+  header {
+    @apply fixed ease-in duration-300 left-0 top-0 w-full z-50 shadow-xl;
+  }
+}
+
+@layer components {
+  .headerLink {
+    @apply cursor-pointer p-4  transition duration-300 hover:text-green-700 hover:underline;
+  }
+}
+
+.inputForm {
+  @apply border border-black rounded-lg w-72 invalid:border-red-500 valid:border-green-500 lg:w-96 shadow-black drop-shadow-lg mb-3 text-center;
+}
+
+.inputForml {
+  @apply border border-black rounded-lg w-72 invalid:border-red-500 valid:border-green-500 lg:w-96 shadow-black drop-shadow-lg mb-10 text-center;
+}
+/* bg-white dark:bg-blue-900 */
